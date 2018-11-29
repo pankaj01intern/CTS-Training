@@ -1,0 +1,19 @@
+{
+  "isbn": 544567,
+  "name": "Java for beginners",
+  "price": 567.0,
+  "chapter_list": [
+    {
+      "pageno": 10,
+      "chapter_name": "java"
+    },
+    {
+      "pageno": 12,
+      "chapter_name": "OOP in java"
+    },
+    {
+      "pageno": 14,
+      "chapter_name": "IO in java"
+    }
+  ]
+}

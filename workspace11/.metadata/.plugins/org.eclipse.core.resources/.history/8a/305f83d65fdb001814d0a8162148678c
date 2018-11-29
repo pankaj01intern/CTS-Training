@@ -1,0 +1,15 @@
+package com;
+
+
+
+public class Test {
+
+	public static void main(String[] args) {
+
+
+		ApplicationContext ac=new ClassPathXMLApplicationContext("Spring.xml");
+		
+
+	}
+
+}

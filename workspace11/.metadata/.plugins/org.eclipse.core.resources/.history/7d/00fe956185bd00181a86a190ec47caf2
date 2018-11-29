@@ -1,0 +1,48 @@
+import java.util.*;
+
+public class Main{
+    
+    public static void main(String args[]){
+        
+        Scanner sc=new Scanner(System.in);
+        
+        String s=sc.next();
+        int n=s.length();
+        char ar2[]=s.toCharArray();
+        int m=(2*n)-1;
+        String ar[][]=new String[m][m];
+        for(int i=0;i<n;i++){
+        	for(int j=0;j<m;j++){
+        		ar[i][j]="^";
+        	}
+        	}
+        
+        
+        int i,j;
+        int k,l,mid=n-1;        
+      
+        for(i=0;i<n;i++){
+   
+        		k=mid-1;
+        		l=mid+1;
+        		if(i==0)
+        			ar[i][mid]=Character.toString(ar2[i]);
+        		else{	
+        			k--;
+        			l++;
+        		ar[i][k]=Character.toString(ar2[i]);
+        		ar[i][l]=Character.toString(ar2[i]);
+        	
+        	}
+        }
+        
+        for(i=0;i<n;i++){
+        	for(j=0;j<m;j++){
+        System.out.print(ar[i][j]);
+        	}
+        	System.out.println();
+        }
+        
+        
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Products>
+    <Product>
+        <id>1800</id>
+        <name>Java Book</name>
+        <cost>677</cost>
+        <author>kumar</author>
+    </Product>
+    
+    <Product>
+        <id>1900</id>
+        <name>XML Book</name>
+        <cost>177</cost>
+        <author>chaturvedi</author>
+    </Product>
+</Products>

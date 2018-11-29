@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Details</title>
+</head>
+<body>
+<h2 align="center">Employee Form</h2>
+<form action="EmployeeServlet1">
+<table align="center">
+
+<tr>
+  <th>Employee Name</th>
+  <td><input type="text" name="empName" required></td> 
+</tr>
+
+<tr>
+  <th>Employee Salary</th>
+  <td><input type="text" name="empSalary" required></td> 
+</tr>
+
+<tr>
+  <th>Employee Gender</th>
+  <td><input type="radio" name="gender" value="Male" required>Male 
+  <input type="radio" name="gender" value="Female" required>Female</td> 
+</tr>
+
+<tr>
+
+<th>Select Department</th>
+<td><select name="deptName" required>
+<option>IT</option>
+<option>HR</option>
+<option>Accounts</option>
+</select>
+</td>
+</tr>
+
+  	<th colspan="2">
+  	<br>
+<input type="submit" value="Save">
+<input type="reset" value="Clear All">
+</table>
+
+
+
+</form>
+
+
+
+</body>
+</html>

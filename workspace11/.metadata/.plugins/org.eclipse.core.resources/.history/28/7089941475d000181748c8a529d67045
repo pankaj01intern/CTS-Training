@@ -1,0 +1,14 @@
+package com;
+
+public class DBUtilConn {	
+		
+	public static void display(String empName, String salary, String gender, String deptName){
+			
+		
+		
+			
+			
+	}
+}
+
+

@@ -1,0 +1,21 @@
+package com;
+
+
+public class Test {
+
+	public static Test getObject(){
+	
+		Test t=new C1();
+		return t;
+
+	}
+
+}
+class C1 extends Test{
+	public static void main(String[] args) {
+		C1 c1=(C1) Test.getObject();
+		System.out.println("---Completed");
+	}
+	
+	
+}

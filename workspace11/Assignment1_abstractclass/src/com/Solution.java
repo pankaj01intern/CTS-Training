@@ -1,0 +1,83 @@
+package com;
+
+
+
+
+import java.io.IOException;
+import java.text.Format;
+import java.util.regex.*;
+import java.lang.reflect.*;
+import java.security.Permission;
+
+public class Solution
+{
+	
+	public static void main(String[] args) {
+		//Do_Not_Terminate.forbidExit();		
+		try{
+			Calculate cal=new Calculate();
+			int T=cal.getINTVal();
+			
+			while(T-- > 0){
+			double volume = 0.0;		
+			int ch=cal.getINTVal();			
+			if(ch==1){
+			
+				int a=cal.getINTVal();
+				volume=Calculate.get_Vol().main(a);
+				
+			}
+			else if(ch==2){
+			
+				int l=cal.getINTVal();
+				int b=cal.getINTVal();
+				int h=cal.getINTVal();
+				volume=Calculate.get_Vol().main(l,b,h);
+				
+			}
+			else if(ch==3){
+			
+				double r=cal.getDoubleVal();
+				volume=Calculate.get_Vol().main(r);
+				
+			}
+			else if(ch==4){
+			
+				double r=cal.getDoubleVal();
+				double h=cal.getDoubleVal();
+				volume=Calculate.get_Vol().main(r,h);
+				
+			}
+			
+		display(volume);
+			
+			}
+					
+		}
+		catch (NumberFormatException e) {
+			System.out.print(e);
+		} 
+		
+		
+	}
+
+	public double main(int a) {
+			return ((double)Math.pow(a,3));
+	}
+	
+    public double main(double... r){
+		 if(r.length==3)
+		    return r[0]*r[1]*r[2];
+		else if(r.length==1)
+			return ((2 * Math.PI * r[0]* r[0]* r[0])/3);
+		else
+		    return ((Math.PI * r[0]* r[0]* r[1]));
+		
+	}
+
+	public static void display(double volume){
+		System.out.printf("%.3f",volume);
+	}
+	
+}
+

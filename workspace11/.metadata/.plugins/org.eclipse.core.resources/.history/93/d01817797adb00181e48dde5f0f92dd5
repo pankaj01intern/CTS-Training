@@ -1,0 +1,32 @@
+package com.product.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.product.dao.ProductDao;
+import com.product.dao.ProductDaoImpl;
+import com.product.model.Product;
+
+@Service("ProductService")
+public class ProductServiceImpl implements ProductService {
+
+	
+	@Autowired
+	private ProductDao productdao;
+
+	 productdao=new ProductDaoImpl();
+	public void saveProduct(Product prod) {
+		productdao.saveProduct(prod);
+		
+		
+	}
+
+	public Product findProduct(String prodId) {
+		Product product=productdao.findProduct(prodId);
+		return product;
+		
+	}
+	
+	
+
+}

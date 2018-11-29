@@ -1,0 +1,54 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+
+class Main{
+    
+    public static void main(String[] args) throws ParseException, IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int month = Integer.parseInt(br.readLine());
+        switch (month) {
+		case 1:
+			System.out.println("T20 World Cup");
+			break;
+		case 2:
+			System.out.println("ODI World Cup");
+			break;
+		case 3:
+			System.out.println("ICC Champions Trophy");
+			break;
+		case 4:
+			System.out.println("Australia Big Bash League");
+			break;
+		case 5:
+			System.out.println("Ranji Trophy");
+			break;
+		case 6:
+			System.out.println("Challenger Trophy");
+			break;
+		case 7:
+			System.out.println("Big Bash League");
+			break;
+		case 8:
+			System.out.println("The Sheffield Shield");
+			break;
+		case 9:
+			System.out.println("English County Cricket");
+			break;
+		case 10:
+			System.out.println("Caribbean T20 League");
+			break;
+		case 11:
+			System.out.println("Hong Kong Sixes");
+			break;
+		case 12:
+			System.out.println("Indian Premier League");
+			break;
+
+		default:
+			System.out.println("Invalid Option");
+			break;
+		}
+    }
+}

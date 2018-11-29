@@ -1,0 +1,16 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+
+class Main{
+    
+    public static void main(String[] args) throws ParseException, IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String input = br.readLine();
+        if(input.equals("full toss")) System.out.println("Whack it");
+        else if(input.equals("out swing")) System.out.println("Leave it");
+        else if(input.equals("in swing")) System.out.println("Defend it");
+        else if(input.equals("bouncer")) System.out.println("Duck it");
+    }
+}

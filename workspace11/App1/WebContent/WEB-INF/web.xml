@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>App1</display-name>
+  <context-param>
+    <param-name>cname</param-name>
+    <param-value>CTS</param-value>
+  </context-param>
+  <context-param>
+    <param-name>city</param-name>
+    <param-value>Bangalore</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>SrvOne</display-name>
+    <servlet-name>SrvOne</servlet-name>
+    <servlet-class>com.SrvOne</servlet-class>
+    <init-param>
+      <param-name>ename</param-name>
+      <param-value>pankaj</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SrvOne</servlet-name>
+    <url-pattern>/SrvOne</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServlet</display-name>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-class>com.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <url-pattern>/EmployeeServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

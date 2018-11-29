@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class Main{
+    
+    public static void main(String args[]){
+        
+        Scanner sc=new Scanner(System.in);
+        
+        int n=sc.nextInt();
+        int m=(2*n)-1;
+        String ar[][]=new String[m][m];
+        for(int i=0;i<n;i++){
+        	for(int j=0;j<m;j++){
+        		ar[i][j]="0";
+        	}
+        	}
+        
+        
+        int i,j;
+        for(i=0;i<m;i++){
+        	if(i%2==0)
+        		ar[0][i]="7";
+        	else
+        		ar[0][i]=".";
+        }
+        
+       /* int k=m-1;
+        for(i=1;i<n;i++){
+        	for(j=0;j<m;j++){
+        		if(k==m-1){
+        			ar[i][k]="7";
+        		}
+        		else
+        			ar[i][j]=".";
+        		
+        		
+        	}
+        	k--;m--;
+        }
+        */
+        for(i=0;i<n;i++){
+        	for(j=0;j<m;j++){
+        System.out.print(ar[i][j]+" ");
+        	}
+        	System.out.println();
+        }
+        
+        
+    }
+}

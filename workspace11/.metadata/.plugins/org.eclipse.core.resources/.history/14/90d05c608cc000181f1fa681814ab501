@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.nextLine();
+        String s2=sc.nextLine();
+        String s3=sc.nextLine();
+        int t1=sc.nextInt();
+        int t2=sc.nextInt();
+        int t=sc.nextInt();
+        
+        String[] str1=s1.split(":");
+        String[] str2=s2.split(":");
+        String[] str3=s3.split(":");
+        
+        int a=3600*(Integer.parseInt(str1[0]))+60*(Integer.parseInt(str1[1]))+(Integer.parseInt(str1[2]));
+        int b=3600*(Integer.parseInt(str2[0]))+60*(Integer.parseInt(str2[1]))+(Integer.parseInt(str2[2]));
+        int c=3600*(Integer.parseInt(str3[0]))+60*(Integer.parseInt(str3[1]))+(Integer.parseInt(str3[2]));
+        
+        if(b<=c){
+        int d=a+60*t1;
+        int e=d+60*t;
+        int f=e+60*t2;
+        
+        if(d<=b) System.out.println("Completed");
+        else System.out.println("Partial");
+        
+        if(f<=c) System.out.println("Completed");
+        else if(e<=c) System.out.println("Partial");
+        else System.out.println("No");
+        
+    }
+    
+    else{
+        int d=a+60*t2;
+        int e=d+60*t;
+        int f=e+60*t1;
+        
+        if(f<=b) System.out.println("Completed");
+        else if(e<=b) System.out.println("Partial");
+        else System.out.println("No");
+        
+        if(d<=c) System.out.println("Completed");
+        else System.out.println("Partial");
+        
+    }
+    
+    } 
+    
+}

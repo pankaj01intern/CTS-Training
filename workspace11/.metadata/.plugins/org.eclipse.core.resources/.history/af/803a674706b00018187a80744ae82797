@@ -1,0 +1,36 @@
+package project2;
+
+import java.util.Arrays;
+
+public class Array{
+ public static void main (String args[]) throws Exception 
+ {/*package whatever //do not write package name here */
+	    int i,res,temp;
+	    int a[]={2,3,4,1,0};
+	    int n=5;
+	    for(i=0;i<n;i++)
+	    {
+	        res=a[fun(i)];
+   //swap(a[i],a[fun(i)];
+   temp=a[res];
+   a[res]=a[i];
+   a[i]=temp;
+	    }
+	    
+	    for(int k:a)
+	    System.out.println(k);
+	}
+	 
+	 public static int fun(int i){
+	       int s = i % 5 + 5 * (i/5);
+        while (s<i)
+          s = s % 5 + 5 * (s/5);
+      return s;
+}
+
+	
+}
+
+                
+   }
+}

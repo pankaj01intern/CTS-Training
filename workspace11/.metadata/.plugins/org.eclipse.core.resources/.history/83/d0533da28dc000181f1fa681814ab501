@@ -1,0 +1,39 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+class Main{
+    
+    public static void main(String[] args) throws ParseException, IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        SimpleDateFormat df = new SimpleDateFormat("HH:MM:SS");
+        
+        Date inTime = df.parse(br.readLine());
+        Date outTime = df.parse(br.readLine());
+        int inPark = Integer.parseInt(br.readLine());
+        int inHotel = Integer.parseInt(br.readLine());
+        int inBeach = Integer.parseInt(br.readLine());
+        int inTheatre = Integer.parseInt(br.readLine());
+        
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(inTime);
+        
+        cl.add(Calendar.MINUTE, inPark);
+        Date park = cl.getTime();
+        cl.add(Calendar.MINUTE, inHotel);
+        Date hotel = cl.getTime();
+        cl.add(Calendar.MINUTE, inBeach);
+        Date beach = cl.getTime();
+        cl.add(Calendar.MINUTE, inTheatre);
+        Date theatre = cl.getTime();
+        
+        if(theatre.before(outTime)) System.out.println("Park"+"\n"+"Hotel"+"\n"+"Beach"+"\n"+"Theatre");
+        else if(beach.before(outTime)) System.out.println("Park"+"\n"+"Hotel"+"\n"+"Beach");
+        else if(hotel.before(outTime)) System.out.println("Park"+"\n"+"\n"+"Hotel");
+        else if(park.before(outTime)) System.out.println("Park");
+    }
+}

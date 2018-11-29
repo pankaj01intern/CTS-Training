@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\workspace11\JSP1"/>
+		<item value="C:\Users\724468\Desktop\BPS_DB_cust"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Hibernate\Hibernate-Table-Operations3"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Hibernate\Hibernate-Mappings"/>
+		<item value="C:\Users\724468\Desktop\project\SpringRest_BPS"/>
+		<item value="C:\Users\724468\Desktop\project\BPS"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Spring-Boot\Boot-Rest-Data-JPA"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Spring-Boot\Boot-WebMVC-APP"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Spring-Boot\Boot-APP1"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Spring\Spring-MVC-ORM"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Spring\Spring-ORM"/>
+		<item value="C:\Users\724468\Desktop\CHN_Git\Spring\Spring-Core-XML"/>
+		<item value="C:\Users\724468\Desktop\StudentManager\StudentManeger"/>
+		<item value="C:\Users\724468\Desktop\StudentManager\StudentManager-IV"/>
+		<item value="C:\Users\724468\Desktop\StudentManager\StudentManager-III"/>
+		<item value="C:\Users\724468\Desktop\StudentManager\StudentManager-II"/>
+		<item value="C:\Users\724468\Desktop\StudentManager\StudentManager-II\src"/>
+		<item value="C:\Users\724468\Desktop\StudentManager"/>
+		<item value="C:\Users\724468\Desktop\Case Studies"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\724468\Desktop\CHN_Git\Spring\Spring-ORM-APP"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="381" key="DIALOG_X_ORIGIN"/>
+		<item value="185" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

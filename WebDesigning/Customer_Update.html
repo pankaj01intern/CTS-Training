@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Bootstrap Core CSS -->
+   <link href="Bootstrap/bootstrap-reboot.min.css" rel="stylesheet">
+
+    <!-- Title Page-->
+    <title>Customer Updation Page</title>
+
+
+    <!-- Main CSS-->
+    <link href="Reg_main.css" rel="stylesheet" media="all">
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Customer Updation Form</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+					
+					
+					 <div class="form-row">
+                            <div class="name">Customer Id</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="customerid">
+                                </div>
+                            </div>
+                        </div>
+						
+						
+                        <div class="form-row m-b-55">
+                            <div class="name">Customer Name</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="first_name">
+                                            <label class="label--desc">first name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="last_name">
+                                            <label class="label--desc">last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Address</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company">
+                                </div>
+                            </div>
+                        </div>
+               
+                        <div class="form-row m-b-55">
+                            <div class="name">Contact Number</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                            <label class="label--desc1">Area Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						 <div class="form-row">
+                            <div class="name">Country</div>
+                            <div class="value">
+                                <div class="input-group">
+                                
+                                        <select class="input--style-6" name="subject">
+                                            <option class="input--style-6" disabled="disabled" selected="selected">Choose option</option>
+                                            <option class="input--style-6">India</option>
+                                            <option class="input--style-6">USA</option>
+                                            <option class="input--style-6">UK</option>
+											<option class="input--style-6">Italy</option>
+                                        </select>
+                                       
+                                    
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="form-row">
+                            <div class="name">State</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    
+                                        <select class="input--style-6" name="subject">
+                                            <option  class="input--style-6" disabled="disabled" selected="selected">Choose option</option>
+                                            <option class="input--style-6" >TamilNadu</option>
+                                            <option class="input--style-6" >Kerala</option>
+                                            <option class="input--style-6" >Karnataka</option>
+											<option class="input--style-6" >Andhra Pradesh</option>
+											<option class="input--style-6" >Scotland</option>
+											<option class="input--style-6" >New Jersey</option>
+											<option class="input--style-6" >Rome</option>	
+											
+                                        </select>
+                                    
+                                </div>
+                            </div>
+                        </div>
+						
+						
+						
+						<div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+					
+						
+						
+                        <div class="form-row">
+                            <div class="name">Type Of Vendor</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <select  class="input--style-6" name="subject">
+                                        <option  class="input--style-6" disabled="disabled" selected="selected">Choose option</option>
+                                        <option class="input--style-6" >Electricity</option>
+                                        <option class="input--style-6" >Telephone</option>
+                                        <option class="input--style-6" >Insurance</option>
+                                        <option class="input--style-6" >Tax</option>
+                                
+                                        
+                                    </select>
+
+								</div>
+                            </div>
+                        </div>
+						
+						
+						<div class="form-row">
+                            <div class="name">Card Number</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="cardno">
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="form-row">
+                            <div class="name">Balance</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="cardno">
+                                </div>
+                            </div>
+                        </div>
+
+				
+                        <div>
+                            <button class="btn btn--radius-2 btn--green" type="submit">Update</button>
+                            <button class="btn btn--radius-2 btn--red" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body> 
+
+</html>
+<!-- end document-->

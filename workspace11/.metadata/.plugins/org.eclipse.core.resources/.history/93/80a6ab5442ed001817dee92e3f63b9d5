@@ -1,0 +1,55 @@
+package com.BPS.customer.controller;
+
+import java.util.List;
+import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.BPS.customer.entities.Customer;
+import com.BPS.customer.service.CustomerService;
+
+
+@RestController
+@CrossOrigin
+@ComponentScans(value = { @ComponentScan("com.BPS.customer.dao"), @ComponentScan("com.BPS.customer.service") })
+@RequestMapping(value = "/customer")
+public class CustomerController {
+
+	@Autowired
+	private CustomerService ps;
+	List<Customer> customers = null;
+	Optional<Customer> customer=null;
+	
+
+	@GetMapping(value = "/")
+	public ResponseEntity<?> listAll() {
+		customers = ps.findAll();
+		if (customers.isEmpty()) {
+			return new ResponseEntity<String>("No Records available in DataBase", HttpStatus.OK);
+		}
+
+		return new ResponseEntity<List<Customer>>(customers, HttpStatus.OK);
+	}
+	
+	
+     @GetMapping(value = "/filter/{custId}")
+	public ResponseEntity<?> findById(@PathVariable("custId") String custId) {
+    	 customer = ps.findById(custId);
+    	 if(!customer.isPresent()) {
+ 			//System.out.println("---- null");
+ 			return new ResponseEntity<String>("Product id "+custId+"  not found",HttpStatus.OK);
+ 		}
+
+		return new ResponseEntity<Optional<Customer>> (customer, HttpStatus.OK);
+	}
+	
+}
+	

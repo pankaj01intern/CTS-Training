@@ -1,0 +1,22 @@
+package com;
+
+public class DBUtilConn {
+
+	public static void main(String[] args) {
+
+
+		new DB().display();
+
+	}
+}
+	
+	class DB{
+		
+		public static void display(){
+			
+			
+			
+		}
+	}
+
+
